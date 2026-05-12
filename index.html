@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bites Batam</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Bites<span>Batam</span></div>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#">Beranda</a>
+      <a href="#">Makanan</a>
+      <a href="#">Minuman</a>
+      <a href="#">Review</a>
+      <a href="#">Kontak</a>
+    </nav>
+
+    <div class="menu-btn" id="menuBtn">
+      <i data-feather="menu"></i>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Temukan Street Food <span>Terenak</span> di Batam 🍜</h1>
+      <p>
+        Jelajahi berbagai makanan favorit seperti mie ayam,
+        churros, kopi susu, jus segar, bakso aci dan masih banyak lagi.
+      </p>
+
+      <button>Jelajahi Sekarang</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop" alt="food">
+    </div>
+  </section>
+
+  <!-- CATEGORY -->
+  <section class="category">
+    <h2>Kategori Populer</h2>
+
+    <div class="category-list">
+      <div class="cat-card active">Semua</div>
+      <div class="cat-card">Makanan</div>
+      <div class="cat-card">Minuman</div>
+      <div class="cat-card">Dessert</div>
+      <div class="cat-card">Kopi</div>
+    </div>
+  </section>
+
+  <!-- REKOMENDASI -->
+  <section class="recommendation">
+    <div class="section-title">
+      <h2>Rekomendasi UMKM</h2>
+      <a href="#">Lihat Semua</a>
+    </div>
+
+    <div class="food-grid">
+
+      <div class="food-card"
+onclick="showDetail(
+'Mie Ayam Bang Jago 🍜',
+'https://images.unsplash.com/photo-1604908177522-040d6fbc3b3c?q=80&w=1000&auto=format&fit=crop',
+'⭐⭐⭐⭐⭐ 4.9/5',
+'Mie ayam legendaris dengan topping ayam gurih dan pangsit crispy.'
+)">
+
+  <img src="https://images.unsplash.com/photo-1604908177522-040d6fbc3b3c?q=80&w=1000&auto=format&fit=crop">
+
+  <div class="food-info">
+    <h3>Mie Ayam Bang Jago</h3>
+    <p>Mie ayam gurih dengan topping melimpah.</p>
+
+    <div class="price-row">
+      <span>⭐ 4.9</span>
+      <span>Rp18K</span>
+    </div>
+  </div>
+
+</div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Churros Melt</h3>
+          <p>Churros crispy dengan saus coklat premium.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp22K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1553530666-ba11a90bb918?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Bakso Aci Juara</h3>
+          <p>Pedas gurih dengan cuanki dan pilus.</p>
+          <div class="price-row">
+            <span>⭐ 4.7</span>
+            <span>Rp20K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1f0d5?q=80&w=1000&auto=format&fit=crop">
+        <div class="food-info">
+          <h3>Fresh Jus Buah</h3>
+          <p>Jus mangga, alpukat, jeruk dan stroberi.</p>
+          <div class="price-row">
+            <span>⭐ 4.8</span>
+            <span>Rp15K</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAP & DETAIL -->
+  <section class="map-section">
+
+    <div class="map-box">
+      <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1000&auto=format&fit=crop">
+    </div>
+
+    <div class="detail-box">
+
+      <div class="detail-item">
+        <i data-feather="map-pin"></i>
+        <div>
+          <h4>Lokasi Strategis</h4>
+          <p>Nagoya, Batam Center, Batu Aji</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i data-feather="clock"></i>
+        <div>
+          <h4>Jam Buka</h4>
+          <p>10.00 - 23.00 WIB</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i data-feather="star"></i>
+        <div>
+          <h4>Rating Tinggi</h4>
+          <p>Disukai banyak pelanggan</p>
+        </div>
+      </div>
+
+      <div class="detail-item">
+        <i data-feather="truck"></i>
+        <div>
+          <h4>Delivery</h4>
+          <p>Bisa pesan online</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DETAIL UMKM -->
+<section class="detail-umkm">
+
+  <h2>Detail UMKM Pilihan</h2>
+
+  <div class="detail-container">
+
+    <div class="detail-image">
+      <img id="detailImg"
+      src="https://images.unsplash.com/photo-1604908177522-040d6fbc3b3c?q=80&w=1000&auto=format&fit=crop">
+    </div>
+
+    <div class="detail-content">
+
+      <h3 id="detailTitle">Mie Ayam Bang Jago 🍜</h3>
+
+      <div class="rating" id="detailRating">
+        ⭐⭐⭐⭐⭐ 4.9/5
+      </div>
+
+      <p id="detailDesc">
+        Mie ayam legendaris dengan topping ayam manis gurih
+        dan pangsit crispy favorit anak muda Batam.
+      </p>
+
+      <button>Pesan Sekarang</button>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- MENU -->
+  <section class="menu-section">
+
+    <h2>Menu Andalan</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?q=80&w=1000&auto=format&fit=crop">
+        <h4>Ice Cream</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1526318472351-c75fcf070305?q=80&w=1000&auto=format&fit=crop">
+        <h4>Kopi Susu</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?q=80&w=1000&auto=format&fit=crop">
+        <h4>Risol Mayo</h4>
+      </div>
+
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1604908177522-040d6fbc3b3c?q=80&w=1000&auto=format&fit=crop">
+        <h4>Mie Ayam</h4>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- REVIEW -->
+  <section class="review-section">
+
+    <div class="review-box">
+      <h2>Share Your Experience ✨</h2>
+
+      <textarea placeholder="Tulis pengalamanmu..."></textarea>
+
+      <button>Kirim Review</button>
+    </div>
+
+    <div class="user-post">
+      <h2>User Post Cards</h2>
+
+      <div class="post-card">
+        <h4>Sarah</h4>
+        <p>Mie ayamnya enak banget dan porsinya besar 🍜</p>
+      </div>
+
+      <div class="post-card">
+        <h4>Rizky</h4>
+        <p>Bakso acinya pedas gurih mantap 🔥</p>
+      </div>
+
+      <div class="post-card">
+        <h4>Nabila</h4>
+        <p>Kopi susu creamy dan tempatnya aesthetic ☕</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+
+    <h2>The Team</h2>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg">
+        <h4>Alexa</h4>
+        <p>UI Designer</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg">
+        <h4>Rafi</h4>
+        <p>Developer</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/65.jpg">
+        <h4>Nadya</h4>
+        <p>Marketing</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/men/50.jpg">
+        <h4>Rio</h4>
+        <p>Editor</p>
+      </div>
+
+      <div class="team-card">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg">
+        <h4>Salsa</h4>
+        <p>Content</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Bites Batam. All rights reserved.</p>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
